@@ -34,5 +34,6 @@ sqlite
 terraform
 tfswitch
 tree
+tox
 unbound
 xz
