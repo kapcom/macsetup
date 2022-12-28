@@ -29,11 +29,11 @@ pinentry-mac
 pipx
 pkg-config
 python@3.11
+pyenv
 readline
 sqlite
 terraform
 tfswitch
 tree
-tox
 unbound
 xz
