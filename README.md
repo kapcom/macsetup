@@ -2,8 +2,8 @@
 
 Update for keyboard home/end settings, will need a reboot after
 
-mkdir -p $HOME/Library/KeyBindings
-
+`mkdir -p $HOME/Library/KeyBindings`
+```
 echo '{
 /* Remap Home / End keys to be correct */
 "\UF729" = "moveToBeginningOfLine:"; /* Home */
@@ -15,3 +15,4 @@ echo '{
 "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
 "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
 }' > $HOME/Library/KeyBindings/DefaultKeyBinding.dict
+```
