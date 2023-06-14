@@ -1,0 +1,112 @@
+#SSH
+
+#Aliases 
+alias rsource='. ~/.bash_aliases'
+alias zsource='. ~/.zsh_aliases'
+alias vimalias='vim ~/.zsh_aliases'
+alias catalias='cat ~/.zsh_aliases'
+alias vrc='vim ~/.vimrc'
+alias zrc='vim ~/.zshrc'
+
+#Random commands
+alias upsafe='/usr/bin/aptitude safe-upgrade'
+alias execssh='exec ssh-agent bash'
+alias vimiso='vim ~/Documents/ISO/Ubuntu_AlternateCD/isolinux/isolinux.cfg'
+
+# Change dirs
+alias cdscripts='cd ~/Library/CloudStorage/Dropbox/scripts/SF'
+alias cdvagrant='cd ~/vagrant'
+alias cdgit='cd ~/git'
+alias cdgo='cd ~/go'
+alias cddl='cd ~/Downloads'
+
+#GIT
+alias gcm='git checkout master'
+alias gcma='git checkout main'
+alias gpm='git pull origin main'
+alias gbr='git branch -v'
+alias gst='git status'
+alias ggo='git add . && git commit'
+alias gre='git reset --hard HEAD~1'
+alias gsm='git commit -S -a -m'
+alias gpu='git push'
+alias gbdo='git branch -D onboard'
+
+#Vagrant commands
+alias v='vagrant'
+alias vd='vagrant destroy'
+alias vdd='vagrant destroy --force'
+alias vs='vagrant status'
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vssh='vagrant ssh'
+
+#Terraform commands
+alias ta='/opt/homebrew/bin/terraform apply'
+alias ti='/opt/homebrew/bin/terraform init'
+alias tp='/opt/homebrew/bin/terraform plan'
+alias td='/opt/homebrew/bin/terraform destroy'
+alias tv='/opt/homebrew/bin/terraform --version'
+alias tr='/opt/homebrew/bin/terraform refresh'
+alias tsl='/opt/homebrew/bin/terraform state list'
+alias ts='/opt/homebrew/bin/terraform state'
+alias t12='/usr/local/bin/tfswitch 0.12.31'
+alias t11='/usr/local/bin/tfswitch 0.11.15'
+alias tfs='/usr/local/bin/tfswitch'
+#alias t11='/usr/local/bin/tfenv use 0.11.15'
+#alias t12='/usr/local/bin/tfenv use 0.12.31'
+alias cb='~/Library/CloudStorage/Dropbox/scripts/SF/cbackend.sh'
+alias ucb='~/Library/CloudStorage/Dropbox/scripts/SF/ucbackend.sh'
+alias rmTF='find . -name *.tf | xargs rm'
+alias tii='/opt/homebrew/Cellar/tfenv/3.0.0/bin/terraform init'
+alias tpp='/opt/homebrew/Cellar/tfenv/3.0.0/bin/terraform plan'
+alias taa='/opt/homebrew/Cellar/tfenv/3.0.0/bin/terraform apply'
+#Virtualbox Commands
+alias vboxrunning='vboxmanage list runningvms'
+alias vboxlist='vboxmanage list vms'
+alias vboxctrl='vboxmanage controlvm'
+
+#Puppet
+alias ppv='puppet parser validate'
+alias pano='puppet apply --noop'
+alias pmodp='puppet master --configprint modulepath'
+#alias python='python3'
+
+#ansible
+alias ap='ansible-playbook'
+
+#python
+alias venv='python3 -m venv'
+alias venvactivate='source ./bin/activate'
+alias pipstuff='pip install tox==3.25.1 && pip install black==22.3.0 && pip install -r requirements.txt'
+alias runblack='black -l100 backend'
+alias uvicorn='python3 -m uvicorn'
+alias py3810='pyenv install 3.8.10 && pyenv global 3.8.10'
+
+#Golang
+alias gb=' /usr/local/bin/gobuild'
+alias gr='/usr/local/bin/go run'
+
+#aws
+alias awslogin='~/git/aws-tools/security/awslogin/awslogin'
+alias aws='/usr/local/bin/aws'
+alias vimcreds='vim ~/.aws/credentials'
+alias catcreds='cat ~/.aws/credentials'
+
+#vscode
+alias opencode='~/Library/CloudStorage/Dropbox/scripts/SF/opencode.sh'
+alias code='/usr/local/bin/code'
+alias pretty='npx prettier --write'
+
+#pcskstuff
+alias pcsk='~/git/aws-tools/security/pcsk/pcsklogin'
+alias aws-cred-gen="docker run -it --rm -v ~/.aws/:/root/.aws aws-cred-gen"
+
+#argo
+alias arrg='echo "-" >> readme.md && echo "-" >> release.md && echo "-" >> docs/intro.md'
+
+#docker
+alias drit='docker run -it'
+alias dockrmall='docker rm $(docker ps -a -q) && docker rmi $(docker images -a -q)'
+alias dockprune='docker system prune -f'
+
